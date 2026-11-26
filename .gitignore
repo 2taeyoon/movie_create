@@ -53,3 +53,10 @@ _tools/src/*/.*
 higgsfield/
 !2d/*/README.md
 !3d/*/README.md
+
+# _tools는 폴더만 올린다 (안의 프로그램은 세팅_가이드.md 4장대로 설치)
+_tools/*
+!_tools/.gitkeep
+
+# 가이드 이미지는 블로그에만 둔다
+세팅_가이드_이미지/
