@@ -1,0 +1,55 @@
+# 영상 파일은 올리지 않는다 (레퍼런스 영상, 원본 영상, 완성본 영상, 렌더 결과)
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.avi
+*.m4v
+
+# 도구·라이브러리는 폴더만 올리고, 안의 내용은 세팅_가이드.md 4장대로 직접 받는다
+_tools/blender-5.3.0-windows-x64/*
+_tools/ffmpeg-9.0.2/*
+_tools/whisper-models/*
+_tools/src/*/*
+_tools/mcp_addon.zip
+2d/스킬/*/*
+3d/스킬/*/*
+!.gitkeep
+
+# 컴퓨터마다 다시 만드는 것
+node_modules/
+.venv*/
+__pycache__/
+*.pyc
+
+# 비밀값
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+
+# 렌더 중 생기는 임시 파일
+*.hf-transaction-*/
+*.log
+
+# 도구 폴더 안의 숨김 파일까지 제외 (.gitkeep만 남김)
+_tools/src/*/.*
+2d/스킬/*/.*
+3d/스킬/*/.*
+!.gitkeep
+
+# 렌더 프레임 이미지 묶음 (영상 결과물)
+3d/프로젝트/*/blender/out/
+
+# 작업하면서 생기는 것은 올리지 않는다 (폴더와 README만 남김)
+2d/프로젝트/*
+3d/프로젝트/*
+2d/레퍼런스/*
+3d/레퍼런스/*
+2d/원본 영상/*
+3d/원본 영상/*
+2d/완성본/*
+3d/완성본/*
+higgsfield/
+!2d/*/README.md
+!3d/*/README.md
